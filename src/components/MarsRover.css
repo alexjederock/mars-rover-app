@@ -1,0 +1,16 @@
+.rover-container {
+  color:aliceblue;
+}
+
+.img-container {
+  display: flex;
+}
+
+.img {
+  margin: 10px;
+  height: auto;
+  width: 2 rem;
+  border-radius: 15px;
+  border: 5px solid yellow;
+}
+

@@ -1,16 +1,18 @@
 import React from 'react'
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import './App.css';
 import Home from './components/Home'
 import NasaPhoto from './components/NasaPhoto'
+import MarsRover from './components/MarsRover'
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <Switch>
         <Route component={Home} path="/" exact />
         <Route component={NasaPhoto} path="/nasaphoto" />
-      </div>
+        <Route component={MarsRover} path="/marsrover" />
+      </Switch>
     </BrowserRouter>
   );
 }
